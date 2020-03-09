@@ -1,0 +1,35 @@
+
+
+<div class="container" ng-controller="myCtrl">
+  <div class="row">
+      <div class="col-12">
+          <h2 >{{title}} / <a href='/' class="btn btn-primary" title="Un click para volver a la lista de usuarios" ><span class="glyphicon glyphicon-backward"></span> Volver a la lista de usuarios</a></h2>
+      </div>
+  </div>
+  <br>
+  <table class="table  table-bordered table-dark" >
+      <tr>
+          <th>Nombre del Usuario</th>
+          <td><input type="text" class="form-control" required [(ngModel)]="selectedUser.nombre" placeholder="Inserta tu nombre"></td>
+          
+      </tr>
+      <tr>
+          <th>Fecha de cumpleaños</th>
+          <td><input type="date" class="form-control"  required [(ngModel)]="selectedUser.date"></td>
+          
+      </tr>
+      <tr>
+          <td colspan="2" style="text-align: center;">
+              <button (click)="save()" class="btn btn-success" role="button" title="Un click para Guardar"><span class="glyphicon glyphicon-edit"></span> Guardar </button>
+          </td>
+      </tr>
+  </table>
+  <br>
+  <div class="row">
+    <div class="col-12  "> 
+      <div class="d-flex justify-content-center"  id="logo2">
+        <img  src="assets/img/angular-logo.png" alt="">
+      </div>  
+    </div>
+  </div>
+</div>  

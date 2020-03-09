@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background: #240b36 ;
+    background-image: linear-gradient(#c31432, #240b36);
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+  
+}
+h2{
+    color: white;
+}
+
+table{
+    box-shadow: 10px 10px 10px black ;
+}
+
+h2 {
+
+    color: white;
+    position: relative;
+    animation-name: titulo;
+    animation-duration: 1s;
+    
+}
+    
+@keyframes titulo {
+    0%   {opacity: 0;}
+    100% {opacity: 100;}
+}
+
+table{
+       
+        
+    position: relative;
+    animation-name: tabla;
+    animation-duration: 1s;
+        
+}
+      
+@keyframes tabla {
+    0%   {opacity: 0;}
+    100% {opacity: 100;}
+}     
+
+div#logo img{
+    
+    
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    
+}
+      
+@keyframes example {
+    0%   {bottom:-2000px}
+    100% { bottom:0px}
+}
+       
+
+
+div#logo2 img {
+
+    position: relative;
+    animation-name: logo2;
+    animation-duration: 2s;
+    
+  }
+  
+  @keyframes logo2 {
+    0%   {right:-2000px; top:0px;}
+    100% {right:0px; top:0px;}
+  } 
+  
